@@ -1,34 +1,28 @@
-.left {float: left;}
-.right {float: right;}
-
-.box {
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: auto;
   color: #2c2c2c;
-  background: #f9f9f9;
+  background-color: #f9f9f9;
   font-family: "Open Sans";
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
+  position: relative;
 }
-#wrapper {
+.box {
   width: 1068px;
-  height: 100%;
-  right: 0;
-  left: 0;
+  height: auto;
   margin: auto;
-  background: url(../img/cont.jpg);
-  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px -1px #dbdbdb;
+  position: relative;
 }
-#header {
+.header {
   margin: 0 50px 40px 50px;
   padding-top: 50px;
   width: 968px;
   height: 120px;
+  position: relative;
 }
 .logo {
   display: block;
@@ -39,15 +33,16 @@
   height: 40px;
   margin-top: 40px;
   background: #515151;
+  position: relative;
 }
-.menu_top--menu li {
+.menu__top-menu li {
   width: 100px;
   height: 40px;
   display: inline-block;
   float: left;
   margin-right: 20px;
 }
-.menu_top--menu a {
+.menu__top-menu a {
   display: block;
   text-decoration: none;
   padding-top: 6px;
@@ -59,14 +54,20 @@
   line-height: 2;
   text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
 }
-.menu_top--menu a:hover {
+.menu__top-menu a:hover {
   border-left: 1px solid #838383;
   border-right:1px solid #838383;
   background: #444444;
 }
-#menushka {
-  float: left;
+.content {
+  position: relative;
   margin-left: 50px;
+  margin-right: 50px;
+  width: 965px;
+  height: 600px;
+}
+.menushka {
+  float: left;
   width: 240px;
   height: 240px;
   border: 1px solid rgb(200, 200, 200);
@@ -89,7 +90,6 @@
   position: absolute;
 }
 .link a:hover {
-  margin-top: 1px;
   padding-left: 35px;
   width: 205px;
   height: 38px;
@@ -100,14 +100,8 @@
   line-height: 39px;
   background-color: #f9f9f9;
 }
-#content {
-  float: right;
-  position: relative;
-  margin-right: 52px;
-  width: 680px;
-  height: 600px;
-}
 .image {
+  float: right;
   width: 680px;
   height: 400px;
   border: 1px solid #c8c8c8;
@@ -117,7 +111,6 @@
 }
 .text-1 {
   float: right;
-  position: relative;
   margin-top: 40px;
   width: 640px;
   height: 160px;
@@ -125,23 +118,26 @@
   line-height: 21.33px;
   font-family: "Open Sans";
 }
-#footer {
-  float: left;
+.footer {
+  width: 968px;
+  height: 100px;
+  position: relative;
+}
+.grey-box {
   width: 968px;
   height: 40px;
   margin-top: 40px;
   margin-left: 50px;
   background-color: #e1e1e1;
-  position: relative;;
 }
-.menu_bottom--menu li {
+.menu__bottom-menu li {
   width: 100px;
   height: 40px;
   display: inline-block;
   float: left;
   margin-right: 20px;
 }
-.menu_bottom--menu a {
+.menu__bottom-menu a {
   display: block;
   text-decoration: none;
   font-size: 13.33px;
@@ -150,7 +146,7 @@
   color: black;
   line-height: 3;
 }
-.menu_bottom--menu a:hover {
+.menu__bottom-menu a:hover {
   text-decoration: underline;
 }
 .text-2 {
